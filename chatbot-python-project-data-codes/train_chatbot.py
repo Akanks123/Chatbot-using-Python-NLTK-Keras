@@ -10,12 +10,7 @@ from keras.layers import Dense, Activation, Dropout
 from keras.optimizers import SGD
 import random
 
-words=[]
-classes = []
-documents = []
-ignore_words = ['?', '!']
-data_file = open('intents.json').read()
-intents = json.loads(data_file)
+
 
 
 for intent in intents['intents']:
